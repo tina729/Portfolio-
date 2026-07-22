@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Angelica Reyna – Web Designer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- DESKTOP NAV -->
+  <nav class="desktop-nav">
+    <a href="#about">About</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <nav class="hamburger-menu">
+    <button class="hamburger-icon" onclick="toggleMenu()">&#9776;</button>
+    <ul class="mobile-nav" id="mobileNav">
+      <li><a href="#about">About</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+
+    <!-- LEFT IMAGE -->
+    <aside class="left-image" aria-label="Hero Image"></aside>
+
+    <!-- HERO + RIGHT CONTENT -->
+    <section class="right-content">
+
+      <!-- HERO -->
+      <header class="hero">
+        <h1>Angelica Reyna</h1>
+        <p>Web Designer • Visual Communicator</p>
+        <a href="files/Angelica Reyna Updated Resume copy.docx" class="btn" download>Download Resume</a>
+      </header>
+
+      <!-- ABOUT -->
+      <section id="about">
+        <h2>About Me</h2>
+        <p>Hi, I’m Angelica Reyna, a web designer and visual communicator passionate about creating clean, engaging, and user-friendly digital experiences. I specialize in responsive web design, front-end development, and compelling visuals, and I love experimenting with new tools and techniques to push my skills further.</p>
+        <p>Feel free to explore more of my work or get in touch—I’d love to connect and share ideas!</p>
+      </section>
+
+      <!-- PORTFOLIO -->
+      <section id="portfolio">
+        <h2>Portfolio</h2>
+
+        <figure class="large-box">
+          <video controls muted loop class="video-preview">
+            <source src="images/princessgame2.mp4" type="video/mp4">
+          </video>
+          <figcaption>Mini Game Preview</figcaption>
+        </figure>
+
+        <figure class="small-box1">
+          <img src="images/christmasPNG.png" alt="Christmas Digital Postcard" />
+          <figcaption>Christmas Digital Postcard</figcaption>
+        </figure>
+
+        <figure class="small-box2">
+          <img src="images/finalrecipewebsite.png" alt="Recipe Website" />
+          <figcaption>Recipe Website</figcaption>
+        </figure>
+
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+          <li class="skill-chip">Design Thinking Process</li>
+          <li class="skill-chip">Wireframing & Prototyping</li>
+          <li class="skill-chip">UI/UX Principles</li>
+          <li class="skill-chip">Visual Design & Typography</li>
+          <li class="skill-chip">HTML & CSS</li>
+          <li class="skill-chip">Responsive Web Design</li>
+          <li class="skill-chip">JavaScript Basics</li>
+          <li class="skill-chip">Figma & Design Tools</li>
+        </ul>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out for collaborations or questions.</p>
+          <form action="formvalidation/save_data.php" method="POST" class="contact-form">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn">Send Message</button>
+          </form>
+      </section>
+
+    </section>
+  </main>
+
+    
+<footer class="footer">
+  <section class="footer-column">
+    <h3>Contact</h3>
+    <p>Houston, Texas<br>
+       Phone: (832) 459-5030<br>
+       United States</p>
+  </section>
+
+  <section class="footer-column">
+    <h3>Available Times</h3>
+    <p>Available Monday - Friday<br>
+       Sat: By Appointment<br>
+       Sun: Closed</p>
+  </section>
+
+  <section class="footer-column">
+    <h3>My Mission</h3>
+    <p>My mission is to create unique, memorable websites that are intuitive and easy to navigate for all users, providing a seamless digital experience.</p>
+  </section>
+
+  <section class="footer-column">
+    <h3>Navigation</h3>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </section>
+
+  <p class="footer-bottom">&copy; 2025 Angelica Reyna. All rights reserved.</p>
+  </footer>
+
+
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('mobileNav');
+      nav.style.display = nav.style.display === "flex" ? "none" : "flex";
+    }
+  </script>
+
+</body>
+</html>
